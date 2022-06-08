@@ -27,7 +27,7 @@ function onCountryInput() {
     fetchCountries(name).then(countries => {
         countryList.innerHTML = '';
         countryInfo.innerHTML = '';
-        if (countries.length === 2) {
+        if (countries.length === 1) {
             countryList.insertAdjacentHTML('beforeend', renderCountryList(countries))
             countryInfo.insertAdjacentHTML('beforeend', renderCountryInfo(countries))
         } else if (countries.length >= 10) {
@@ -75,6 +75,9 @@ function renderCountryInfo(countries) {
         .join('')
     return markup
 }
+
+
+
 
 
 
