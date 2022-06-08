@@ -80,14 +80,6 @@ export function fetchCountries(name) {
 
 
 
-
-
-
-
-
-
-
-
 // const options = {
 //     headers: {
 // 'BASE_URL': 'https://restcountries.com/v3.1/all',
